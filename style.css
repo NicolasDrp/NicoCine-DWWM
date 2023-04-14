@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(255, 238, 238);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin-top: 8px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    position: fixed;
+    background-color: rgb(255, 238, 238);
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(255, 36, 36);
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.plus a {
+    text-decoration: none;
+    color: rgb(255, 36, 36);
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+article:hover {
+    scale: 110%;
+}
+
+a:hover {
+    color: coral;
+}
+
+img {
+    width: 10rem;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.plus {
+    text-align: right;
+}
+
+.plus p {
+    display: inline;
+}
+
+footer p {
+    text-align: center;
+}
+
+select {
+    text-align: center;
+}
+
+#contact {
+    width: 700x;
+    position: fixed;
+    left: 50%;
+    margin-left: -320px;
+    top: 20%;
+    border: solid black 2px;
+    display: none;
+}
+#croixcontact{
+    text-align: right;
+}

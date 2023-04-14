@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Les Acteurs</title>
+</head>
+
+<body>
+    <header>
+        <div class="titre">
+            <a href="index.html">
+                <h1>NicoCiné</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="film.html">
+                    <li>Les Films</li>
+                </a>
+                <a href="acteur.html">
+                    <li>Les Acteurs</li>
+                </a>
+                <a href="#" id="btncontact">
+                    <li>Nous Contacter</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="contact">
+        <form action="post">
+            <label for="nom">Votre nom:</label>
+            <input type="text" id="nom">
+            <a href="#" id="croixContact">X</a>
+            <br>
+            <label for="email">Votre adresse mail</label>
+            <input type="email">
+            <br>
+            <label for="demande">L'objet de votre demande</label>
+            <select name="" id="demande">
+                <option value="">---Choisir---</option>
+                <option value="commentaire">Soumettre des commentaires</option>
+                <option value="question">Poser une question</option>
+                <option value="renseignement">Demandes de renseignements</option>
+            </select>
+        </form>
+        <address>
+            NicoCiné
+            <br>
+            <a href="#">324 rue Làbalà 59123 France</a>
+            <br>
+            <a href="#">0607080908</a>
+            <br>
+            <a href="#">NicoCiné.contact@gmail.com</a>
+        </address>
+    </div>
+    
+    <script type="text/javascript" src="contact.js"></script>
+
+</body>
+
+</html>
