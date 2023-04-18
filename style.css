@@ -50,10 +50,6 @@ header a {
     transition: 0.5s;
 }
 
-article:hover {
-    scale: 110%;
-}
-
 a:hover {
     color: coral;
 }
@@ -64,14 +60,6 @@ img {
 
 main {
     padding-top: 80px;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
 }
 
 .plus {
@@ -88,17 +76,4 @@ footer p {
 
 select {
     text-align: center;
-}
-
-#contact {
-    width: 700x;
-    position: fixed;
-    left: 50%;
-    margin-left: -320px;
-    top: 20%;
-    border: solid black 2px;
-    display: none;
-}
-#croixcontact{
-    text-align: right;
 }

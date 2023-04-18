@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Les Acteurs</title>
 </head>
 
@@ -34,21 +35,21 @@
         </nav>
     </header>
     <div id="contact">
-        <form action="post">
-            <label for="nom">Votre nom:</label>
+        <form>
+            <label for="nom">Votre nom</label>
             <input type="text" id="nom">
             <a href="#" id="croixContact">X</a>
-            <br>
             <label for="email">Votre adresse mail</label>
             <input type="email">
-            <br>
             <label for="demande">L'objet de votre demande</label>
-            <select name="" id="demande">
+            <select id="demande">
                 <option value="">---Choisir---</option>
                 <option value="commentaire">Soumettre des commentaires</option>
-                <option value="question">Poser une question</option>
-                <option value="renseignement">Demandes de renseignements</option>
+                <option value="renseignement">Demande de renseignements</option>
             </select>
+            <label for="message">Votre message</label>
+            <textarea id="message" cols="30" rows="8"></textarea>
+            <input type="submit" value="envoyer">
         </form>
         <address>
             NicoCiné
@@ -60,7 +61,7 @@
             <a href="#">NicoCiné.contact@gmail.com</a>
         </address>
     </div>
-    
+
     <script type="text/javascript" src="contact.js"></script>
 
 </body>

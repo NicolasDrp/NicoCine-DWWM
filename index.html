@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -38,31 +40,53 @@
     </header>
     <main>
         <h2>Les tendances du moment</h2>
-        <section>
-            <article><a href="film.html"><img src="images/gladiator.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/batman.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/joker.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/ligneVert.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/pulp fiction.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/titanic.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/ligneVert.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/pulp fiction.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/batman.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/joker.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/titanic.jpg" alt=""></a></article>
-            <article><a href="film.html"><img src="images/gladiator.jpg" alt=""></a></article>
-        </section>
+        <div class="slider-container">
+            <section class="slider">
+                <article><a href="film.html"><img src="images/batman2.jpg" alt="gladiator"></a></article>
+                <article><a href="film.html"><img src="images/strange.jpg" alt="joker"></a></article>
+                <article><a href="film.html"><img src="images/superman.jpg" alt="ligneVert"></a></article>
+                <article><a href="film.html"><img src="images/affiche_grande_illusion.jpg" alt="batman"></a></article>
+            </section>
+        </div>
         <div class="plus">
             <a href="film.html">
                 <p>Voir plus...</p>
             </a>
         </div>
+        <div id="contact">
+            <form>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom">
+                <a href="#" id="croixContact">X</a>
+                <label for="email">Votre adresse mail</label>
+                <input type="email">
+                <label for="demande">L'objet de votre demande</label>
+                <select id="demande">
+                    <option value="">---Choisir---</option>
+                    <option value="commentaire">Soumettre des commentaires</option>
+                    <option value="renseignement">Demande de renseignements</option>
+                </select>
+                <label for="message">Votre message</label>
+                <textarea id="message" cols="30" rows="8"></textarea>
+                <input type="submit" value="envoyer">
+            </form>
+            <address>
+                NicoCiné
+                <br>
+                <a href="#">324 rue Làbalà 59123 France</a>
+                <br>
+                <a href="#">0607080908</a>
+                <br>
+                <a href="#">NicoCiné.contact@gmail.com</a>
+            </address>
+        </div>
     </main>
     <footer>
         <p>&copy; NicoCiné 1918-2023 | NicoCiné.contact@gmail.com</p>
     </footer>
-    
+
     <script type="text/javascript" src="contact.js"></script>
 
 </body>
+
 </html>
