@@ -6,6 +6,10 @@ section {
     gap: 2rem;
 }
 
+img {
+    width: 10rem;
+}
+
 article:hover {
     scale: 110%;
 }
