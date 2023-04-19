@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="detailsfilm.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Les Acteurs</title>
+    <title>Film</title>
 </head>
 
 <body>
@@ -37,40 +38,39 @@
             </ul>
         </nav>
     </header>
-<<<<<<< HEAD
-    <div id="contact">
-        <form action="post">
-            <label for="nom">Votre nom:</label>
-            <input type="text" id="nom">
-            <a href="#" id="croixContact">X</a>
-            <br>
-            <label for="email">Votre adresse mail</label>
-            <input type="email">
-            <br>
-            <label for="demande">L'objet de votre demande</label>
-            <select name="" id="demande">
-                <option value="">---Choisir---</option>
-                <option value="commentaire">Soumettre un commentaire</option>
-                <option value="renseignement">Demande de renseignements</option>
-            </select>
-            <input type="submit" value="envoyer">
-        </form>
-        <address>
-            NicoCiné
-            <br>
-            <a href="#">324 rue Làbalà 59123 France</a>
-            <br>
-            <a href="#">0607080908</a>
-            <br>
-            <a href="#">NicoCiné.contact@gmail.com</a>
-        </address>
-    </div>
-    
-=======
-
     <main>
+        <div class="container-film">
+            <section class="film-img">
+                <img src="images/batman.jpg" alt="batman">
+            </section>
+            <section class="description">
+                <h2>The Dark Knight</h2>
+                <p>Date de sortie : 13 aôut 2008</p>
+                <p>Durée : 152 minutes</p>
+                <!-- <p>Action , Thriller</p> -->
+                <p>Par Jonathan Nolan, Christopher Nolan</p>
+                <p>Avec Christian Bale, Heath Ledger, Aaron Eckhart</p>
+                <p>Synopsis : Dans ce nouveau volet, Batman augmente les mises dans sa guerre contre le crime. Avec
+                    l'appui
+                    du lieutenant de police Jim Gordon et du procureur de Gotham, Harvey Dent, Batman vise à éradiquer
+                    le
+                    crime organisé qui pullule dans la ville. Leur association est très efficace mais elle sera bientôt
+                    bouleversée par le chaos déclenché par un criminel extraordinaire que les citoyens de Gotham
+                    connaissent
+                    sous le nom de Joker.</p>
 
-
+                <div class="horaires">
+                    <h3>Horaires disponibles :</h3>
+                    <ul>
+                        <li><button>Mercredi 19h30</button></li>
+                        <li><button>Jeudi 21h00</button></li>
+                        <li><button>Vendredi 18h00</button></li>
+                        <li><button>Samedi 22h30</button></li>
+                        <li><button>Dimanche 12h00</button></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
         <div id="contact">
             <form>
                 <label for="nom">Votre nom</label>
@@ -103,9 +103,8 @@
         <p>&copy; NicoCiné 1918-2023 | NicoCiné.contact@gmail.com</p>
     </footer>
     <div class="cote"></div>
->>>>>>> 1a7147ff1703566c838d1f5e72ce43daf9bfdcd3
-    <script type="text/javascript" src="contact.js"></script>
 
+    <script type="text/javascript" src="contact.js"></script>
 </body>
 
 </html>

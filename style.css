@@ -1,18 +1,21 @@
 body {
-    background-color: rgb(255, 238, 238);
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color: rgb(29, 26, 26);
     margin-top: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
 }
 
 h1 {
-    margin-top: 8px;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    position: fixed;
 }
 
 h2 {
     font-size: 30px;
     margin-top: 0;
+    color: white;
 }
 
 header {
@@ -20,16 +23,18 @@ header {
     display: flex;
     height: 5rem;
     position: fixed;
-    background-color: rgb(255, 238, 238);
+    background-color: black;
     z-index: 99;
+    box-shadow: 0 0 100px rgb(175, 169, 169);
 }
 
-nav {
+header nav {
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
-ul {
+header ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -38,7 +43,7 @@ ul {
 
 header a {
     text-decoration: none;
-    color: rgb(255, 36, 36);
+    color: white;
     font-size: 25px;
     transition: 0.5s;
 }
@@ -50,31 +55,18 @@ header a {
     transition: 0.5s;
 }
 
-article:hover {
-    scale: 110%;
-}
-
 a:hover {
     color: coral;
 }
 
-img {
-    width: 10rem;
-}
-
 main {
-    padding-top: 80px;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 2rem;
+    padding-top: 6rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .plus {
+    position: relative;
     text-align: right;
 }
 
@@ -84,21 +76,19 @@ section {
 
 footer p {
     text-align: center;
+    color: white;
 }
+
 
 select {
     text-align: center;
 }
 
-#contact {
-    width: 700x;
+.cote {
     position: fixed;
-    left: 50%;
-    margin-left: -320px;
-    top: 20%;
-    border: solid black 2px;
-    display: none;
-}
-#croixcontact{
-    text-align: right;
+    top: 0;
+    left: 0;
+    width: 0.3%;
+    height: 100vh;
+    background-color: black;
 }
