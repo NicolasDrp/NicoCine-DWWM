@@ -1,0 +1,34 @@
+div.container-acteur {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+section a {
+    color: rgb(19, 19, 201);
+}

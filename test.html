@@ -1,44 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Acteurs à l'affiche</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>      
-    <main>
-        <h1>Acteurs à l'affiche</h1>
-      <section>
-        <h2>Tom Holland</h2>
-        <img src="" alt="Tom Holland">
-        <ul>
-          <li>Date de naissance : 1er juin 1996</li>
-          <li>Lieu de naissance : Kingston upon Thames, Royaume-Uni</li>
-          <li>Films : Spider-Man : Homecoming, Spider-Man : Far From Home, Avengers: Infinity War, Avengers: Endgame</li>
-        </ul>
-        <a href="#">En savoir plus</a>
-      </section>
-      <section>
-        <h2>Emma Stone</h2>
-        <img src="" alt="Emma Stone">
-        <ul>
-          <li>Date de naissance : 6 novembre 1988</li>
-          <li>Lieu de naissance : Scottsdale, Arizona, États-Unis</li>
-          <li>Films : La La Land, The Help, Birdman, The Amazing Spider-Man</li>
-        </ul>
-        <a href="#">En savoir plus</a>
-      </section>
-      <section>
-        <h2>Leonardo DiCaprio</h2>
-        <img src=" alt="Leonardo DiCaprio">
-        <ul>
-          <li>Date de naissance : 11 novembre 1974</li>
-          <li>Lieu de naissance : Los Angeles, Californie, États-Unis</li>
-          <li>Films : The Revenant, Titanic, Inception, The Wolf of Wall Street</li>
-        </ul>
-        <a href="#">En savoir plus</a>
-      </section>
-    </main>
-  </body>
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="titre">
+          <a href="index.html">
+            <h1>NicoCiné</h1>
+          </a>
+        </div>
+        <nav>
+          <ul class="menu-desktop">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="film.html">Les Films</a></li>
+            <li><a href="acteur.html">Les Acteurs</a></li>
+            <li><a href="#" id="btncontact">Nous Contacter</a></li>
+          </ul>
+          <div class="menu-mobile">
+            <input type="checkbox" id="burger-toggle" />
+            <label for="burger-toggle" class="burger-icon">&#9776;</label>
+            <ul class="menu-mobile-items">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="film.html">Les Films</a></li>
+              <li><a href="acteur.html">Les Acteurs</a></li>
+              <li><a href="#" id="btncontact">Nous Contacter</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      
+</body>
 </html>

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="titre">
             <a href="index.html">
                 <h1>NicoCiné</h1>
@@ -38,6 +38,8 @@
             </ul>
         </nav>
     </header>
+    <a href="#" id="menuBurger"><img src="images/menu.png" alt="ouvrir menu"></a>
+    <a href="#" id="croixHeader">X</a>
     <main>
         <h2>Les tendances du moment</h2>
         <div class="slider-container">
@@ -45,7 +47,8 @@
                 <article><a href="detailsfilm.html"><img src="images/batman2.jpg" alt="gladiator"></a></article>
                 <article><a href="detailsfilm.html"><img src="images/strange.jpg" alt="joker"></a></article>
                 <article><a href="detailsfilm.html"><img src="images/superman.jpg" alt="ligneVert"></a></article>
-                <article><a href="detailsfilm.html"><img src="images/affiche_grande_illusion.jpg" alt="batman"></a></article>
+                <article><a href="detailsfilm.html"><img src="images/affiche_grande_illusion.jpg" alt="batman"></a>
+                </article>
             </section>
         </div>
         <div class="plus">
@@ -56,18 +59,18 @@
         <div id="contact">
             <form>
                 <label for="nom">Votre nom</label>
-                <input type="text" id="nom">
+                <input type="text" id="nom" pattern=".{1,49}" required>
                 <a href="#" id="croixContact">X</a>
                 <label for="email">Votre adresse mail</label>
-                <input type="email">
+                <input type="email" required>
                 <label for="demande">L'objet de votre demande</label>
-                <select id="demande">
+                <select id="demande" required>
                     <option value="">---Choisir---</option>
                     <option value="commentaire">Soumettre des commentaires</option>
                     <option value="renseignement">Demande de renseignements</option>
                 </select>
                 <label for="message">Votre message</label>
-                <textarea id="message" cols="30" rows="8"></textarea>
+                <textarea id="message" cols="30" rows="8" required></textarea>
                 <input type="submit" value="envoyer">
             </form>
             <address>
@@ -84,7 +87,7 @@
     <footer>
         <p>&copy; NicoCiné 1918-2023 | NicoCiné.contact@gmail.com</p>
     </footer>
-<div class="cote"></div>
+    <div class="cote"></div>
     <script type="text/javascript" src="contact.js"></script>
 
 </body>

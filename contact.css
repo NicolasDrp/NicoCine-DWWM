@@ -65,3 +65,21 @@
 #croixContact:hover {
     color: red;
 }
+
+/* tablette paysage */
+@media (max-width:1080px) {
+    #contact{
+        width: 50%;
+    }
+    
+}
+
+/* tablette portrait */
+@media (max-width:850px) {}
+
+/* mobile  */
+@media (max-width:450px) {
+    #contact{
+        width: 80%;
+    }
+}

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header" >
         <div class="titre">
             <a href="index.html">
                 <h1>NicoCiné</h1>
@@ -38,6 +38,8 @@
             </ul>
         </nav>
     </header>
+    <a href="#" id="menuBurger"><img src="images/menu.png" alt="ouvrir menu"></a>
+    <a href="#" id="croixHeader">X</a>
     <main>
         <div class="container-film">
             <section class="film-img">
@@ -74,18 +76,18 @@
         <div id="contact">
             <form>
                 <label for="nom">Votre nom</label>
-                <input type="text" id="nom">
+                <input type="text" id="nom" pattern=".{1,49}" required>
                 <a href="#" id="croixContact">X</a>
                 <label for="email">Votre adresse mail</label>
-                <input type="email">
+                <input type="email" required>
                 <label for="demande">L'objet de votre demande</label>
-                <select id="demande">
+                <select id="demande" required>
                     <option value="">---Choisir---</option>
                     <option value="commentaire">Soumettre des commentaires</option>
                     <option value="renseignement">Demande de renseignements</option>
                 </select>
                 <label for="message">Votre message</label>
-                <textarea id="message" cols="30" rows="8"></textarea>
+                <textarea id="message" cols="30" rows="8" required></textarea>
                 <input type="submit" value="envoyer">
             </form>
             <address>

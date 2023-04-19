@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="acteur.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="titre">
             <a href="index.html">
                 <h1>NicoCiné</h1>
@@ -37,22 +38,115 @@
             </ul>
         </nav>
     </header>
-<<<<<<< HEAD
+    <a href="#" id="menuBurger"><img src="images/menu.png" alt="ouvrir menu"></a>
+    <a href="#" id="croixHeader">X</a>
+    <main>
+        <h2>Les acteurs à l'affiche</h2>
+        <div class="container-acteur">
+            <section>
+                <h3>Christian Bale</h3>
+                <img src="images/acteur/bale.jpg" alt="Christian Bale">
+                <ul>
+                    <li>Date de naissance : 30 janvier 1974 (49 ans)</li>
+                    <li>Lieu de naissance : Haverfordwest (pays de Galles, Royaume-Uni)</li>
+                    <li>Films : American Psycho,
+                        The Dark Knight (trilogie),
+                        Le Prestige,
+                        Fighter,
+                        American Bluff,
+                        The Pale Blue Eye</li>
+                </ul>
+                <a href="#">En savoir plus</a>
+            </section>
+            <section>
+                <h3>Russell Crowe</h3>
+                <img src="images/acteur/crowe.jpg" alt="Russell Crowe">
+                <ul>
+                    <li>Date de naissance : 7 avril 1964 (59 ans)</li>
+                    <li>Lieu de naissance : Wellington, île du Nord, Nouvelle-Zélande</li>
+                    <li>Films : L.A. Confidential,
+                        Révélations,
+                        Gladiator,
+                        Un homme d'exception,
+                        Master and Commander : De l'autre côté du monde</li>
+                </ul>
+                <a href="#">En savoir plus</a>
+            </section>
+            <section>
+                <h3>Tom Hanks</h3>
+                <img src="images/acteur/hanks.jpg" alt="Tom Hanks">
+                <ul>
+                    <li>Date de naissance : 9 juillet 1956 (66 ans)</li>
+                    <li>Lieu de naissance : Concord, Californie (États-Unis)</li>
+                    <li>Films : Philadelphia,
+                        Forrest Gump,
+                        Il faut sauver le soldat Ryan,
+                        La Ligne verte,
+                        Seul au monde</li>
+                </ul>
+                <a href="#">En savoir plus</a>
+            </section>
+            <section>
+                <h3>John Travolta</h3>
+                <img src="images/acteur/travolta.jpg" alt="John Travolta">
+                <ul>
+                    <li>Date de naissance : 18 février 1954 (69 ans)</li>
+                    <li>Lieu de naissance : Englewood, New Jersey, États-Unis</li>
+                    <li>Films : La Fièvre du samedi soir,
+                        Grease,
+                        Pulp Fiction,
+                        Volte-face,
+                        Get Shorty</li>
+                </ul>
+                <a href="#">En savoir plus</a>
+            </section>
+            <section>
+                <h3>Joaquin Phoenix</h3>
+                <img src="images/acteur/phoenix.jpg" alt="Joaquin Phoenix">
+                <ul>
+                    <li>Date de naissance : 28 octobre 1974 (48 ans)</li>
+                    <li>Lieu de naissance : San Juan, Porto Rico</li>
+                    <li>Films : Gladiator,
+                        Walk the Line,
+                        Two Lovers,
+                        The Master,
+                        Her,
+                        Joker</li>
+                </ul>
+                <a href="#">En savoir plus</a>
+            </section>
+            <section>
+                <h3>Kate Winslet</h3>
+                <img src="images/acteur/winslet.jpg" alt="Kate Winslet">
+                <ul>
+                    <li>Date de naissance : 5 octobre 1975 (47 ans)</li>
+                    <li>Lieu de naissance : Reading, Angleterre (Royaume-Uni)</li>
+                    <li>Films : Titanic,
+                        Eternal Sunshine of the Spotless Mind,
+                        The Reader,
+                        Les Noces rebelles,
+                        Steve Jobs</li>
+                </ul>
+                <a href="#">En savoir plus</a>
+            </section>
+        </div>
+    </main>
+
     <div id="contact">
-        <form action="post">
-            <label for="nom">Votre nom:</label>
-            <input type="text" id="nom">
+        <form>
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" pattern=".{1,49}" required>
             <a href="#" id="croixContact">X</a>
-            <br>
             <label for="email">Votre adresse mail</label>
-            <input type="email">
-            <br>
+            <input type="email" required>
             <label for="demande">L'objet de votre demande</label>
-            <select name="" id="demande">
+            <select id="demande" required>
                 <option value="">---Choisir---</option>
-                <option value="commentaire">Soumettre un commentaire</option>
+                <option value="commentaire">Soumettre des commentaires</option>
                 <option value="renseignement">Demande de renseignements</option>
             </select>
+            <label for="message">Votre message</label>
+            <textarea id="message" cols="30" rows="8" required></textarea>
             <input type="submit" value="envoyer">
         </form>
         <address>
@@ -65,45 +159,10 @@
             <a href="#">NicoCiné.contact@gmail.com</a>
         </address>
     </div>
-    
-=======
-
-    <main>
-
-
-        <div id="contact">
-            <form>
-                <label for="nom">Votre nom</label>
-                <input type="text" id="nom">
-                <a href="#" id="croixContact">X</a>
-                <label for="email">Votre adresse mail</label>
-                <input type="email">
-                <label for="demande">L'objet de votre demande</label>
-                <select id="demande">
-                    <option value="">---Choisir---</option>
-                    <option value="commentaire">Soumettre des commentaires</option>
-                    <option value="renseignement">Demande de renseignements</option>
-                </select>
-                <label for="message">Votre message</label>
-                <textarea id="message" cols="30" rows="8"></textarea>
-                <input type="submit" value="envoyer">
-            </form>
-            <address>
-                NicoCiné
-                <br>
-                <a href="#">324 rue Làbalà 59123 France</a>
-                <br>
-                <a href="#">0607080908</a>
-                <br>
-                <a href="#">NicoCiné.contact@gmail.com</a>
-            </address>
-        </div>
-    </main>
     <footer>
         <p>&copy; NicoCiné 1918-2023 | NicoCiné.contact@gmail.com</p>
     </footer>
     <div class="cote"></div>
->>>>>>> 1a7147ff1703566c838d1f5e72ce43daf9bfdcd3
     <script type="text/javascript" src="contact.js"></script>
 
 </body>

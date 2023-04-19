@@ -1,24 +1,52 @@
 div.container-film {
     display: flex;
     width: 100%;
-    margin-left: 15%;
+    gap: 1rem;
 }
 
-.film-img{
-    width: 28%;
+.film-img {
+    width: 45%;
 }
+
 .film-img img {
-    width: 100%;
-}
-.description{
-    width: 40%;
+    width: 80%;
+    margin-left: 20%;
 }
 
-.horaires button{
+.description {
+    width: 40%;
+    color: white;
+}
+
+.horaires button {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
 }
-.horaires ul{
+
+.horaires ul {
     list-style: none;
 }
+
+.horaires ul {
+    padding-left: 0;
+}
+
+/* tablette paysage */
+@media (max-width:1080px) {
+    .film-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+/* tablette portrait */
+@media (max-width:850px) {
+    .description p{
+        font-size: 0.8rem;
+    }
+}
+
+/* mobile  */
+@media (max-width:450px) {}

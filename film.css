@@ -18,3 +18,27 @@ img {
 article:hover {
     scale: 105%;
 }
+
+/* Petit ecran */
+@media (max-width:1380px) {
+    article {
+        width: calc(18.5% - 0%);
+    }
+}
+
+/* tablette paysage */
+@media (max-width:1080px) {
+    article {
+        width: calc(18% - 0%);
+    }
+}
+/* tablette portrait */
+@media  (max-width:850px) {
+    
+}
+/* mobile  */
+@media (max-width:450px){
+    article {
+        width: calc(47.5% - 0%);
+    }
+}
